@@ -198,6 +198,7 @@ def update(dt):
     
     # Line thickness of 2 px 
     thickness = 2
+
     contours, _ = cv2.findContours(op_morf, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
     for countour in contours:
@@ -226,8 +227,6 @@ def update(dt):
 
     # Display output image
     cv2.imshow('image',output)
-    #cv2.imshow('op_morf',op_morf)
-    #cv2.imshow('img_return',img_return)
     cv2.waitKey(1)
 
 
